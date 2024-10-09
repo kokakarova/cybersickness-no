@@ -31,7 +31,7 @@ jobs:
         run: npm run build
 
       - name: log file names
-        run: ls -la
+        run: cd dist && ls -la
         
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
