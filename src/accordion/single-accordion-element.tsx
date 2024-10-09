@@ -2,14 +2,14 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { ContentType } from "../types";
 
 type Props = {
-    header: string,
-    subHeader: string,
-    content: string
+  header: string;
+  content: ContentType[];
 };
 
-const SingleAccordionElement = ({header, subHeader, content}: Props) => {
+const SingleAccordionElement = ({ header, content }: Props) => {
   return (
     <Accordion>
       <AccordionSummary
@@ -19,12 +19,12 @@ const SingleAccordionElement = ({header, subHeader, content}: Props) => {
       >
         {header}
       </AccordionSummary>
-      <AccordionDetails>
-        <h3>{subHeader}</h3>
-        <div>
-          {content}
-        </div>
-      </AccordionDetails>
+      {content.map((c) => (
+        <AccordionDetails>
+          <h3>{c.subHeader}</h3>
+          <div>{c.text}</div>
+        </AccordionDetails>
+      ))}
     </Accordion>
   );
 };
