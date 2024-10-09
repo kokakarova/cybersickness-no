@@ -49,11 +49,11 @@ export const accordionContent: AccordionType[] = [
     content: [
         {
           subHeader: "WATER",
-          text: "Drink fresh, cool water. it help settle your stomach when you start feeling sweaty or nauseous.",
+          text: "Drink fresh, cool water. It will help settle your stomach when you start feeling sweaty or nauseous.",
         },
         {
             subHeader: "GINGER",
-            text: "Have some kind of a ginger drink or snack. It could help with the nausea."
+            text: "Have some kind of ginger drink or snack. It could help with the nausea."
         }
       ],
   },
