@@ -14,7 +14,7 @@
   place-content: center;
   top: 0;
   left: 0;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #008000;
   position: fixed;
   background-color: #242424;
   align-items: center;
@@ -28,6 +28,10 @@
 
 .intro-container {
   margin-top: 80px;
+}
+
+.text-thin {
+  font-weight: 300;
 }
 
 .MuiAccordion-root.MuiPaper-root {

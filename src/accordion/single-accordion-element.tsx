@@ -22,7 +22,7 @@ const SingleAccordionElement = ({ header, content }: Props) => {
       {content.map((c) => (
         <AccordionDetails>
           <h4>{c.subHeader}</h4>
-          <div>{c.text}</div>
+          <div className="text-thin">{c.text}</div>
         </AccordionDetails>
       ))}
     </Accordion>
