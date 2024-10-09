@@ -1,6 +1,6 @@
 {
   "name": "cybersickness-no",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://kokakarova.github.io/cybersickness-no/",
