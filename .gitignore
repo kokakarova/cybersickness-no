@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 .history/*
 
-qr-code-*.png
+qr-code
